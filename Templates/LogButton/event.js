@@ -1,4 +1,4 @@
-document.querySelector('#btn1').onclick = function() {
+document.querySelector('.svg-wrapper').onclick = function() {
   document.querySelector('.loader-wrap').style.display = "block";
   setTimeout(function() {
     document.querySelector('.loader-wrap').style.display = "none";
