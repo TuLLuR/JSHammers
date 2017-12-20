@@ -1,82 +1,88 @@
-@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 body {
-  margin: 0px;
-  padding: 0px;
-  background-color: #00bfff;
+    margin: 0px;
+    padding: 0px;
+    background-color: #00bfff;
 }
 
 #main {
-  height: 225px;
-  width: 400px;
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 100px auto;
+    height: 225px;
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 100px auto;
 }
 
 #title {
-  text-align: center;
-  font-size: 22px;
-  font-family: arial;
-  font-weight: 600;
-  padding: 50px 0 0 0;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Arial';
+    font-weight: 600;
+    padding: 50px 0 0 0;
 }
 
 .field {
-  text-align: center;
+    text-align: center;
 }
 
 .field input {
-  height: 40px;
-  width: 300px;
-  padding: 0 0 0 5px;
-  margin: 30px 0 0 0;
-  outline: none;
-  border: 2px dashed #00bfff;
+    height: 40px;
+    width: 300px;
+    padding: 0 0 0 5px;
+    margin: 30px 0 0 0;
+    outline: none;
+    border: 2px dashed #00bfff;
 }
 
-#btn {
-  height: 40px;
-  width: 100px;
-  background-color: #11998e;
-  outline: none;
-  border: none;
-  color: white;
-  font-size: 13px;
-  font-family: arial;
-  margin: 55px 0 0 0;
-  overflow: hidden;
+.btn {
+    border: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 50px auto 0;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+
 }
 
-#btn:before {
-  display: inline-block;
-  content: 'SEND';
-  position: relative;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  -webkit-transition: all .3s;
+.btn:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -80px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 35px;
+    z-index: 1;
 }
 
-#btn:hover:before {
-  left: 150%;
+.btn > span {
+    z-index: 20;
+    position: relative;
 }
 
-#btn:after {
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  background: url('android-send.png');
-  content: '';
-  position: relative;
-  top: 50%;
-  left: -150%;
-  -webkit-transition: all .3s;
+.btn:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-#btn:hover:after {
-  left: -25%;
-}
+
