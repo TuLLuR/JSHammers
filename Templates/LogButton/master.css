@@ -1,0 +1,122 @@
+.wrap {
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.svg-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 60px;
+}
+
+.shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: white;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    /*
+  background: #03001e;
+  background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+  background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+   */
+}
+
+.text {
+    /* font-family: 'Roboto Condensed'; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 60px;
+    letter-spacing: 8px;
+    width: 320px;
+    position: absolute;
+    display: block;
+    top: calc(50% - 63.5px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+
+/*
+.loader{
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear   infinite;
+}
+*/
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+Цвет №1:
+background: #200122;
+background: -webkit-linear-gradient(to right, #6f0000, #200122);
+background: linear-gradient(to right, #6f0000, #200122);
+Цвет №2:
+background: #C9FFBF;
+background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);
+background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+Цвет №3:
+background: #833ab4;
+background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+Цвет №4:
+background: #000000;
+background: -webkit-linear-gradient(to right, #434343, #000000);
+background: linear-gradient(to right, #434343, #000000);
+*/
+
+/*
+Стили для загрузки.
+#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("http://i.stack.imgur.com/MnyxU.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
