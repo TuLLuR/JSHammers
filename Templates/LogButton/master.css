@@ -1,31 +1,32 @@
-.wrap{
-  background: #00c6ff;
-  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-  background: linear-gradient(to right, #0072ff, #00c6ff);
-  text-align: center;
-  height: 100%;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+.wrap {
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 .svg-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 auto;
-  width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 60px;
 }
 
 .shape {
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -474;
-  stroke-width: 8px;
-  fill: transparent;
-  stroke: white;
-  border-bottom: 5px solid black;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-  /*
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: white;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    /*
   background: #03001e;
   background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
   background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
@@ -33,28 +34,34 @@
 }
 
 .text {
-  /* font-family: 'Roboto Condensed'; */
-  font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
-  line-height: 32px;
-  letter-spacing: 8px;
-  color: #fff;
-  top: -48px;
-  position: relative;
-  overflow: hidden;
-  -moz-user-select: -moz-none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  cursor: pointer;
+    /* font-family: 'Roboto Condensed'; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 60px;
+    letter-spacing: 8px;
+    width: 320px;
+    position: absolute;
+    display: block;
+    top: calc(50% - 63.5px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
 }
 
 .svg-wrapper:hover .shape {
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760;
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
 }
+
 /*
 .loader{
   border: 16px solid #f3f3f3;
@@ -65,9 +72,14 @@
   animation: spin 2s linear   infinite;
 }
 */
+
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /*

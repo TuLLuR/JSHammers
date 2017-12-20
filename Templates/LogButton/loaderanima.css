@@ -17,12 +17,12 @@
 
 .loader {
   position: relative;
-  top: 48%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
   height: 60px;
-  line-height: 55px;
+  line-height: 60px;
   text-align: center;
   color: #fff;
   font-size: 22px;
