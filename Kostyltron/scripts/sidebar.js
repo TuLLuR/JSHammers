@@ -1,6 +1,8 @@
 $('.sidebtn').on("click", function() {
   $('.sidebtn').toggleClass('sidebtnc');
   $('.sidebar').toggleClass('side');
+    
+    $('.sidebtn').toggleClass('sideBtn');
 });
 
 $('#person').on("click", function () {

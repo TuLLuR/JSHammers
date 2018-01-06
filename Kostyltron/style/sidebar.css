@@ -15,9 +15,15 @@ body, html{
   background: #3498db;
   overflow: hidden;
   transition: 0.8s all;
+    
+    position: fixed;
 }
 .side{
   margin: 0;
+}
+.sideBtn{
+    
+    margin-left: 100px;
 }
 
 
@@ -54,6 +60,11 @@ body, html{
   color: #3498db;
   font-family: Ionicons;
   cursor: pointer;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.8s all;
 }
 
 .sidebtn:before{
