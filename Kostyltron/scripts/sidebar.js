@@ -1,8 +1,13 @@
 $('.sidebtn').on("click", function() {
   $('.sidebtn').toggleClass('sidebtnc');
   $('.sidebar').toggleClass('side');
-    
-    $('.sidebtn').toggleClass('sideBtn');
+    $('.screenfilter').toggleClass('dispalyfilter');
+});
+
+$('.screenfilter').on("click", function() {
+  $('.sidebtn').toggleClass('sidebtnc');
+  $('.sidebar').toggleClass('side');
+    $('.screenfilter').toggleClass('dispalyfilter');
 });
 
 $('#person').on("click", function () {
